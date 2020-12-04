@@ -1,0 +1,50 @@
+{
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2020": true,
+    "jest": true
+  },
+  "extends": ["plugin:react/recommended", "airbnb", "prettier/react"],
+  "plugins": ["react", "jsx-a11y", "prettier"],
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "linebreak-style": ["error", "unix"],
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-alert": "error",
+    "no-debugger": "error",
+    "react/forbid-prop-types": [
+      "error",
+      { "forbid": ["any", "array"], "checkContextTypes": true, "checkChildContextTypes": true }
+    ],
+    "react/button-has-type": 0,
+    "react/jsx-props-no-spreading": 0,
+    "max-len": [
+      2,
+      {
+        "code": 100,
+        "comments": 100
+      }
+    ]
+    // Below rules should be enabled by default in create-react-app
+    // "react-hooks/rules-of-hooks": "error",
+    // "react-hooks/exhaustive-deps": "warn"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".js", ".jsx"]
+      }
+    }
+  }
+}
