@@ -1,4 +1,4 @@
-# Cox Automotive
+# Client Side React Atomic Front End Structure
 
 ## Setup and Requirements
 
