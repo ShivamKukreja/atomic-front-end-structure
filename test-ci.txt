@@ -1,0 +1,1 @@
+This is the file to test the execution of the gitlab runner and pipeline via gitlab-ci.yml file.
